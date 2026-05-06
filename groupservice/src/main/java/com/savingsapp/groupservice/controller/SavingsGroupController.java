@@ -40,7 +40,7 @@ public class SavingsGroupController {
     @GetMapping("/{groupId}")
     public ResponseEntity<ApiResponse<GroupResponse>> getGroupById(@PathVariable String groupId) {
         log.info("Fetching savings group with id: {}", groupId);
-        GroupResponse group = savingsGroupService.getGroupById(groupId);
+//        GroupResponse group = savingsGroupService.getGroupById(groupId);
         return ResponseEntity.ok(ApiResponse.success(group));
     }
 

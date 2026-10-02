@@ -53,6 +53,8 @@ public class SavingsGroupController {
         return ResponseEntity.ok(ApiResponse.success("Group updated successfully", group));
     }
 
+    
+
     @DeleteMapping("/{groupId}")
     public ResponseEntity<ApiResponse<Void>> deleteGroup(@PathVariable String groupId,
                                                          @AuthenticationPrincipal JwtUserDetails userDetails) {
